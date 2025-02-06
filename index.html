@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инструкция по применению чаги берёзовой</title>
+    <style>
+        /* Контейнер для изображения */
+        .image-container {
+            width: 100%; /* По умолчанию, ширина 100% для маленьких экранов */
+            max-width: 1280px; /* Максимальная ширина контейнера */
+            margin: 0 auto; /* Центрируем контейнер по горизонтали */
+            overflow: hidden; /* Обрезаем изображение, если оно выходит за границы контейнера */
+        }
+
+        img {
+            width: 100%; /*  Ширина 100% контейнера */
+            height: auto; /* Автоматически рассчитывать высоту, чтобы сохранить пропорции */
+            object-fit: contain; /* Масштабируем изображение, чтобы полностью поместилось в контейнер, без обрезки */
+            object-position: center; /* Позиционируем изображение по центру контейнера */
+            display: block;
+        }
+
+        /* Медиа-запрос для экранов шириной 768px и больше */
+        @media (min-width: 768px) {
+            .image-container {
+                /* Можно задать другую ширину контейнера для больших экранов, если нужно */
+                /* width: 768px;  Например, фиксированная ширина для средних экранов */ */
+            }
+            img {
+                object-fit: contain;
+            }
+        }
+
+        /* Медиа-запрос для экранов шириной 992px и больше */
+        @media (min-width: 992px) {
+            .image-container {
+
+            }
+            img {
+                object-fit: contain;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="чага.jpg" alt="Ошибочка(">
+    </div>
+
+</body>
+</html>
